@@ -1,5 +1,4 @@
 from kmeans import kmeans
-import collections
 
 if __name__=="__main__":
     numberofclass=8
@@ -11,10 +10,10 @@ if __name__=="__main__":
             realclass.append(line.split(",")[-1])
 
     temp=[]
-    counter=0
+    # counter=0
     for data in dataset:
         if data in temp:
-            counter+=1
+            # counter+=1
         else:
             temp.append(data)
     k=kmeans(dataset, 3)
